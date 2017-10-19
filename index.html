@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <h1>Form</h1>
+   <h3>Exercise#2 - 20171019</h3>
+<form action="">
+    <fieldset>
+        <legend>Please register</legend>
+        <br>
+        <label for="name">Name:</label>
+        <input type="name" name="name" id="name" placeholder="" required maxlength="30"/>
+        <br>   
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="" required maxlength="30"/>
+        <br>
+        <br>
+        <label for="password">Password:</label>    
+        <input type="password" name="password" placeholder=""  required/>
+        <br>
+        <br>
+        <label for="repeat-password">Reapet Password:</label>
+        <input type="password" name="repeat-password" placeholder=""  required/>
+        <br>
+   </fieldset>
+   <fieldset>
+        <legend>Personal Details</legend>   
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" name="Age" placeholder="" min="10" max="120"/>
+        <br>
+        <br>
+        <label for="radio">Status:</label>    
+        <input type="radio" name="Status" value="married"/>Married
+        <input type="radio" name="Status" value="single"/>Single
+        <br>
+        <br>
+        <label for="hobby">Select Hobby:</label>         
+        <br>
+        <select name="hobby" id="Hobby" multiple>
+            <optgroup label="Sport">
+                <option value="Tenis">Tenis</option>
+                <option value="Bedminton">Bedminton</option>
+                <option value="Basketball">Basketball</option>
+            <optgroup label="Art">
+                <option value="Paint">Paint</option>
+                <option value="Photograph">Photograph</option>
+            </optgroup>
+        </select>            
+        <br>
+        <label for="hidden">Status:</label>    
+        <input type="hidden" name="hidden" value="W24LCH"/>
+    </fieldset>
+    
+   <fieldset>
+        <legend>More Info</legend>   
+        <br>
+        <label for="image">Please choose Profile picture:</label>
+        <br>
+        <br>        
+        <input type="file" name="image" id="image" accept="image/*">
+        <br>
+        <br>
+        <label for="about">About Me:</label>
+        <br>
+        <br>        
+        <textarea id="comments" rows="5" cols="20"></textarea>
+        <br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Finish</legend>   
+        <br>
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+        <br>
+    </fieldset>
+</form>
+</body>
+</html>
